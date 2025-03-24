@@ -21,4 +21,3 @@ langchain
 langchain_groq 
 unstructured
 sentence-transformers
-pickle5
