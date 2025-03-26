@@ -16,6 +16,10 @@ API = "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"
 
 st.title("Crypto Trade Advisor")
 
+st.text("I can provide data on Shib, Ethereum, Bitcoin, and DOGE")
+st.text("Data referenc from:CoinMarketCap (https://coinmarketcap.com/) ")
+
+
 # ✅ Use LangChain's Groq wrapper to initialize the LLM
 llm = ChatGroq(api_key=API, model_name="llama3-8b-8192")
 
