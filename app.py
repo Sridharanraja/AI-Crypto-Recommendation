@@ -14,12 +14,12 @@ from langchain_groq import ChatGroq  # ✅ Fix: Use LangChain Groq Wrapper
 
 API = "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"
 
-st.title("RAG Application with Groq")
+st.title("Crypto Trade Advisor")
 
 # ✅ Use LangChain's Groq wrapper to initialize the LLM
 llm = ChatGroq(api_key=API, model_name="llama3-8b-8192")
 
-urls = ["https://coinmarketcap.com/currencies/dogecoin/"]
+urls = ["https://coinmarketcap.com/currencies/dogecoin/","https://coinmarketcap.com/currencies/ethereum/","https://coinmarketcap.com/currencies/shiba-inu/","https://coinmarketcap.com/currencies/bitcoin/"]
 
 loader = UnstructuredURLLoader(urls=urls)
 data = loader.load()
